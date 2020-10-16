@@ -1,0 +1,26 @@
+char * StrCpy(char *src)
+{
+	//计算src长度
+
+	int len=strlen(src);
+
+	//申请内存空间
+
+	char *str =(char *)malloc((len+1)*sizeof(char));	
+	
+	//复制
+	
+	for( int i = 0 ; i < len ; i++)
+	{
+		str[i]=src[i];
+	}
+
+	//最后一位放入'\0'
+
+	str[len]='\0';
+
+	//返回新申请空间的指针
+
+	return str;
+}
+
