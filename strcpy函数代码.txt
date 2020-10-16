@@ -24,3 +24,5 @@ char * StrCpy(char *src)
 	return str;
 }
 
+本地edit。
+
